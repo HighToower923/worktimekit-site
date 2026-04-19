@@ -10,7 +10,7 @@
   <meta property="og:description" content="Use free work hour and timesheet calculators to total shifts, weekly hours, overtime, and timecards with clean results and mobile-friendly tools.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://worktimekit.com/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"No. Just open the calculator you need, enter your times, and review the result."}},{"@type":"Question","name":"Can the calculators handle overnight shifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. If the end time is earlier than the start time, the calculator treats the shift as crossing midnight."}},{"@type":"Question","name":"Can I include breaks and minutes?","acceptedAnswer":{"@type":"Answer","text":"Yes. The timesheet, weekly, and timecard tools let you subtract break minutes and show clear totals."}},{"@type":"Question","name":"Which page should I use first?","acceptedAnswer":{"@type":"Answer","text":"Start with Timesheet for a single shift, Weekly for a full week, or Timecard for multiple date rows."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I need to install anything?","acceptedAnswer":{"@type":"Answer","text":"No installation or account is required. Open any calculator in your browser, enter your start and end times (and breaks where asked), and read the totals on the same page."}},{"@type":"Question","name":"Can the calculators handle overnight shifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. When the end time is earlier than the start time, the calculator assumes the shift crosses midnight and totals the hours so you do not need to add 24 hours by hand."}},{"@type":"Question","name":"Can I include breaks and minutes?","acceptedAnswer":{"@type":"Answer","text":"Yes. The timesheet, weekly, and timecard tools include break fields in minutes so unpaid time is subtracted from paid hours, and totals show in both clock time and decimal hours where helpful."}},{"@type":"Question","name":"Which page should I use first?","acceptedAnswer":{"@type":"Answer","text":"Start with Timesheet for a single shift, Weekly for Monday through Sunday totals, or Timecard when you have several rows or dates. Use Work Hours for a repeating pattern, Hours Between for a pure time gap, and Overtime when you need regular versus overtime split."}}]}</script>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script defer src="assets/js/main.js"></script>
@@ -29,6 +29,7 @@
           <li><a data-nav href="timesheet.html">Timesheet</a></li>
           <li><a data-nav href="weekly.html">Weekly</a></li>
           <li><a data-nav href="work-hours.html">Work Hours</a></li>
+          <li><a data-nav href="hours-between.html">Hours Between</a></li>
           <li><a data-nav href="overtime.html">Overtime</a></li>
           <li><a data-nav href="timecard.html">Timecard</a></li>
           <li><a data-nav href="faq.html">FAQ</a></li>
@@ -86,6 +87,24 @@
         <div class="ad-slot" aria-label="Top ad placeholder">
           <div aria-hidden="true"></div>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Quick guide</span>
+          <h2>How these calculators help</h2>
+          <p class="lead">Match the page to what you are trying to total—each tool stays focused on one kind of work hour problem.</p>
+        </div>
+        <ul class="check-list">
+          <li><a href="timesheet.html">Timesheet</a> — one shift with breaks, decimal hours, and a quick pay estimate.</li>
+          <li><a href="weekly.html">Weekly</a> — a full week of entries with weekly totals and overtime-friendly outputs.</li>
+          <li><a href="work-hours.html">Work Hours</a> — daily and weekly estimates from a regular shift pattern and rate.</li>
+          <li><a href="hours-between.html">Hours Between</a> — the span between two times, including overnight gaps.</li>
+          <li><a href="overtime.html">Overtime</a> — split worked time into regular and overtime with a simple pay check.</li>
+          <li><a href="timecard.html">Timecard</a> — multiple rows or dates when your week is not a single repeating shift.</li>
+        </ul>
       </div>
     </section>
 
@@ -207,19 +226,19 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>Do I need to install anything?</summary>
-            <p>No. Just open the calculator you need, enter your times, and review the result.</p>
+            <p>No installation or account is required. Open any calculator in your browser, enter your start and end times (and breaks where asked), and read the totals on the same page.</p>
           </details>
           <details class="faq-item">
             <summary>Can the calculators handle overnight shifts?</summary>
-            <p>Yes. If the end time is earlier than the start time, the calculator treats the shift as crossing midnight.</p>
+            <p>Yes. When the end time is earlier than the start time, the calculator assumes the shift crosses midnight and totals the hours so you do not need to add 24 hours by hand.</p>
           </details>
           <details class="faq-item">
             <summary>Can I include breaks and minutes?</summary>
-            <p>Yes. The timesheet, weekly, and timecard tools let you subtract break minutes and show clear totals.</p>
+            <p>Yes. The timesheet, weekly, and timecard tools include break fields in minutes so unpaid time is subtracted from paid hours, and totals show in both clock time and decimal hours where helpful.</p>
           </details>
           <details class="faq-item">
             <summary>Which page should I use first?</summary>
-            <p>Start with <a href="timesheet.html">Timesheet</a> for a single shift, <a href="weekly.html">Weekly</a> for a full week, or <a href="timecard.html">Timecard</a> for multiple date rows.</p>
+            <p>Start with <a href="timesheet.html">Timesheet</a> for a single shift, <a href="weekly.html">Weekly</a> for Monday through Sunday totals, or <a href="timecard.html">Timecard</a> when you have several rows or dates. Use <a href="work-hours.html">Work Hours</a> for a repeating pattern, <a href="hours-between.html">Hours Between</a> for a pure time gap, and <a href="overtime.html">Overtime</a> when you need regular versus overtime split.</p>
           </details>
         </div>
       </div>
