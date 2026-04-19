@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/timesheet.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/weekly.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/work-hours.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/hours-between.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/overtime.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/timecard.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/about.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/faq.html</loc>
+  </url>
+</urlset>

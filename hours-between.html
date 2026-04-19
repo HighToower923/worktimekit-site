@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hours Between Times Calculator | Find Time Difference Fast</title>
+  <meta name="description" content="Calculate the exact hours and minutes between two times, including overnight shifts that pass midnight, with a simple browser-based tool.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">WT</span><span>WorkTimeKit</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a data-nav href="index.html">Home</a></li>
+          <li><a data-nav href="timesheet.html">Timesheet</a></li>
+          <li><a data-nav href="weekly.html">Weekly</a></li>
+          <li><a data-nav href="work-hours.html">Work Hours</a></li>
+          <li><a data-nav href="hours-between.html">Between</a></li>
+          <li><a data-nav href="overtime.html">Overtime</a></li>
+          <li><a data-nav href="timecard.html">Timecard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-intro">
+      <div class="section-inner">
+        <span class="eyebrow">Difference Tool</span>
+        <h1>Hours between times calculator</h1>
+        <p class="lead">This page calculates the time difference between any start and end time. It is handy for shifts, appointments, planning blocks, and quick duration checks when you do not need break deductions.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <!-- ADSENSE_TOP -->
+        <div class="ad-slot"><div><strong>Top Ad Placement</strong><span>Replace with your top ad code later.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner content-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <span class="eyebrow">Calculator</span>
+              <h2>Find the duration between two times</h2>
+            </div>
+          </div>
+          <form id="between-form">
+            <div class="field-grid two">
+              <label>Start time
+                <input type="time" name="start" required>
+              </label>
+              <label>End time
+                <input type="time" name="end" required>
+              </label>
+            </div>
+            <p class="form-hint">If the end time is earlier than the start time, the tool treats it as the next day and shows an overnight note.</p>
+            <div class="button-row">
+              <button type="submit">Calculate difference</button>
+              <button type="reset">Reset</button>
+            </div>
+            <div id="between-message" class="message" hidden></div>
+            <section id="between-result" class="result-card" hidden>
+              <h3>Time difference</h3>
+              <div class="summary-grid">
+                <div class="summary-item"><span class="summary-label">Total duration</span><span class="summary-value" data-value="betweenTotal">0h 00m</span></div>
+                <div class="summary-item"><span class="summary-label">Decimal hours</span><span class="summary-value" data-value="betweenDecimal">0.00 hours</span></div>
+                <div class="summary-item"><span class="summary-label">Overnight?</span><span class="summary-value" data-value="overnightNote">No</span></div>
+                <div class="summary-item"><span class="summary-label">Time range</span><span class="summary-value" data-value="startEnd">--</span></div>
+              </div>
+            </section>
+          </form>
+        </div>
+        <aside class="contact-card">
+          <span class="eyebrow">Related Calculators</span>
+          <h2>Next steps</h2>
+          <ul class="link-list">
+            <li><a href="timesheet.html">Timesheet with breaks</a></li>
+            <li><a href="work-hours.html">Work hours calculator</a></li>
+            <li><a href="overtime.html">Overtime calculator</a></li>
+            <li><a href="faq.html">FAQ page</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <!-- ADSENSE_MIDDLE -->
+        <div class="ad-slot"><div><strong>Middle Ad Placement</strong><span>A good place for an in-content responsive unit.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions about time differences</h2>
+          <p class="lead">Many users search for an hours between times calculator to avoid manual counting. These answers explain what the tool does.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Does this subtract lunch or breaks?</summary>
+            <p>No. This page only measures raw time between the start and end points. Use the <a href="timesheet.html">timesheet calculator</a> if you need break deductions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can it calculate overnight durations?</summary>
+            <p>Yes. A range such as 11:30 PM to 4:15 AM is treated as crossing midnight.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Why show decimal hours?</summary>
+            <p>Decimal values are easier to transfer into payroll sheets and productivity logs, while the hours-and-minutes view is easier to read at a glance.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What tool should I use for a whole week?</summary>
+            <p>Move to the <a href="weekly.html">weekly timesheet calculator</a> when you need a Monday through Sunday total.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <!-- ADSENSE_BOTTOM -->
+        <div class="ad-slot"><div><strong>Bottom Ad Placement</strong><span>Reserved for a bottom ad slot.</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark">WT</span><span>WorkTimeKit</span></a>
+          <p class="footer-note">Quick browser-based calculators for common work time questions.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="timesheet.html">Timesheet</a></li>
+          <li><a href="weekly.html">Weekly</a></li>
+          <li><a href="timecard.html">Timecard</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-note">© <span data-year></span> WorkTimeKit.</p>
+    </div>
+  </footer>
+</body>
+</html>
