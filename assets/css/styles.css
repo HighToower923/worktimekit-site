@@ -480,18 +480,29 @@ textarea:focus {
 .ad-slot {
   border-radius: var(--radius-md);
   min-height: 124px;
-  padding: 22px;
+  padding: 0;
   display: grid;
   place-items: center;
   border: 1px dashed rgba(15, 118, 110, 0.24);
-  color: var(--muted);
+  color: transparent;
   text-align: center;
+  overflow: hidden;
 }
 
 .ad-slot strong {
   display: block;
   color: var(--text);
   margin-bottom: 6px;
+}
+
+.ad-slot > div {
+  width: 100%;
+  min-height: 124px;
+}
+
+.ad-slot strong,
+.ad-slot span {
+  display: none;
 }
 
 .faq-list {
