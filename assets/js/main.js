@@ -47,7 +47,7 @@ function bindContactForm() {
     }
 
     form.reset();
-    setMessage(output, "success", "Thanks for your note. If you need a reply, please use the email address shown on this page.");
+    setMessage(output, "success", "Thanks. This form is not connected to email yet. For a reply, please write to hello@worktimekit.com.");
   });
 
   form.addEventListener("reset", () => {
