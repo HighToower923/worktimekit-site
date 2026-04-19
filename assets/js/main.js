@@ -47,7 +47,7 @@ function bindContactForm() {
     }
 
     form.reset();
-    setMessage(output, "success", "Thanks. This demo contact form works locally and is ready to connect to your preferred form provider later.");
+    setMessage(output, "success", "Thanks for your note. If you need a reply, please use the email address shown on this page.");
   });
 
   form.addEventListener("reset", () => {
