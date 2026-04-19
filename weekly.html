@@ -115,7 +115,32 @@
             <li>Overnight rows are supported.</li>
             <li>Switch to <a href="timecard.html">Timecard</a> for more flexible rows.</li>
           </ul>
+          <p>Use the timesheet calculator for one shift at a time, or move to the timecard calculator when you need more rows than a simple weekly layout. The overtime calculator is helpful when you already know your total work hours and only need the regular and overtime split.</p>
         </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner article-grid">
+        <article class="article-card">
+          <h2>How to use this calculator</h2>
+          <ol>
+            <li>Enter start and end times for each day you worked.</li>
+            <li>Add break minutes for each row where needed.</li>
+            <li>Leave unused days blank so they are skipped.</li>
+            <li>Enter your hourly rate and overtime threshold if you want a pay estimate.</li>
+            <li>Click Calculate week to total your weekly timesheet.</li>
+          </ol>
+        </article>
+        <article class="article-card">
+          <h2>Example calculation</h2>
+          <p>Example: Monday to Friday from 9:00 AM to 5:30 PM with a 30-minute break gives 8h 00m per day, or 40h 00m for the week.</p>
+          <p>If you also worked Saturday from 9:00 AM to 1:00 PM with no break, this weekly timesheet calculator would show 44h 00m total, including 4h 00m of overtime on a 40-hour threshold.</p>
+        </article>
+        <article class="article-card">
+          <h2>How it works</h2>
+          <p>Each daily entry is converted into minutes so the calculator can total work hours accurately. Break minutes are subtracted from each row before the week is added together, and overnight timesheet rows are handled automatically. The final weekly total is shown in hours and minutes, converted into decimal hours, and compared with your overtime threshold.</p>
+        </article>
       </div>
     </section>
 
@@ -136,19 +161,19 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>Do I need to fill every day?</summary>
-            <p>No. You can leave unused days blank and the calculator will skip them.</p>
+            <p>No. You can leave unused days blank and the weekly timesheet calculator will skip them when it totals your work hours. That keeps the calculation clean if you only worked part of the week.</p>
           </details>
           <details class="faq-item">
             <summary>What if one day crosses midnight?</summary>
-            <p>The script detects when the end time is earlier than the start time and treats that row as an overnight shift.</p>
+            <p>If the end time is earlier than the start time, the calculator treats that row as an overnight shift. This helps your weekly timesheet stay accurate for night work, late closings, or early morning finishes.</p>
           </details>
           <details class="faq-item">
             <summary>How is overtime shown?</summary>
-            <p>The page compares total weekly minutes against your threshold and shows how many minutes remain regular versus overtime.</p>
+            <p>The calculator compares your total weekly work hours against the overtime threshold you enter. It then shows how much of the timesheet stays regular time and how much moves into overtime.</p>
           </details>
           <details class="faq-item">
             <summary>Can I check one day only?</summary>
-            <p>Yes, but for a faster one-shift calculation the <a href="timesheet.html">timesheet calculator with breaks</a> may be a better fit.</p>
+            <p>Yes, but for a faster one-shift calculation the <a href="timesheet.html">timesheet calculator with breaks</a> may be a better fit. The weekly calculator is most useful when you want all of your work hours and overtime in one place.</p>
           </details>
         </div>
       </div>
