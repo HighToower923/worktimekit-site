@@ -385,6 +385,97 @@ button:focus-visible {
   color: var(--muted);
 }
 
+.soft-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.funnel-cta {
+  background:
+    linear-gradient(180deg, rgba(15, 118, 110, 0.06), rgba(255, 255, 255, 0.96));
+  border-color: rgba(15, 118, 110, 0.16);
+}
+
+.funnel-cta p {
+  max-width: 64ch;
+}
+
+.recommendation-block {
+  display: grid;
+  gap: 16px;
+}
+
+.comparison-table-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(31, 41, 51, 0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--text);
+  font-weight: 800;
+}
+
+.comparison-table td {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.pros-cons-grid,
+.best-for-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pros-card,
+.cons-card,
+.best-for-card {
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.pros-card {
+  border-color: rgba(22, 101, 52, 0.16);
+}
+
+.cons-card {
+  border-color: rgba(180, 35, 24, 0.12);
+}
+
+.pros-card ul,
+.cons-card ul,
+.best-for-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.pros-card li,
+.cons-card li,
+.best-for-card li {
+  margin-bottom: 8px;
+}
+
 form {
   display: grid;
   gap: 18px;
@@ -651,7 +742,9 @@ tbody tr:last-child td {
   .stat-grid,
   .summary-grid,
   .field-grid.two,
-  .field-grid.three {
+  .field-grid.three,
+  .pros-cons-grid,
+  .best-for-grid {
     grid-template-columns: 1fr;
   }
 

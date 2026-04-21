@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   markCurrentPage();
   setYear();
   hydrateAffiliateLinks();
+  initTrackedClicks();
   bindContactForm();
   initTimesheetCalculator();
   initWeeklyCalculator();
@@ -44,6 +45,26 @@ function hydrateAffiliateLinks() {
     link.setAttribute("href", href);
     link.setAttribute("target", "_blank");
     link.setAttribute("rel", "sponsored nofollow noopener");
+  });
+}
+
+function initTrackedClicks() {
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-track-click]");
+
+    if (!target || typeof window.gtag !== "function") {
+      return;
+    }
+
+    const action = target.dataset.trackClick || "worktimekit_click";
+    const label = target.dataset.trackLabel || target.textContent.trim() || "click";
+
+    window.gtag("event", action, {
+      event_category: "engagement",
+      event_label: label,
+      link_url: target.getAttribute("href") || target.dataset.trackHref || "",
+      page_path: window.location.pathname
+    });
   });
 }
 
