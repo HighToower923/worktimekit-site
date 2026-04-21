@@ -3,11 +3,18 @@ const AFFILIATE_LINKS = {
   fiverr: "https://twnfz.com/g/oqcmadzidp7f89abee89acbbb3152e/",
   square: "https://example.com/square-affiliate-link"
 };
+const OUTBOUND_OFFER_LINKS = {
+  clockify: "https://example.com/clockify",
+  toggl: "https://example.com/toggl-track",
+  harvest: "https://example.com/harvest",
+  quickbooks_time: "https://example.com/quickbooks-time"
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   markCurrentPage();
   setYear();
   hydrateAffiliateLinks();
+  hydrateOfferLinks();
   initTrackedClicks();
   bindContactForm();
   initTimesheetCalculator();
@@ -37,6 +44,21 @@ function hydrateAffiliateLinks() {
   document.querySelectorAll("[data-affiliate-key]").forEach((link) => {
     const key = link.dataset.affiliateKey;
     const href = AFFILIATE_LINKS[key];
+
+    if (!href) {
+      return;
+    }
+
+    link.setAttribute("href", href);
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "sponsored nofollow noopener");
+  });
+}
+
+function hydrateOfferLinks() {
+  document.querySelectorAll("[data-offer-key]").forEach((link) => {
+    const key = link.dataset.offerKey;
+    const href = OUTBOUND_OFFER_LINKS[key];
 
     if (!href) {
       return;
