@@ -53,9 +53,32 @@
         <h1>Best time tracking apps for recurring work</h1>
         <p class="lead">Time tracking apps start making sense when hours are repeated, client work is billed, or projects need a history. If you only need a quick total, a calculator is still faster, but regular work often benefits from an app that stores data over time.</p>
         <div class="soft-button-group">
-          <a class="button" href="#app-shortlist" data-track-click="comparison_button" data-track-label="best time tracking apps shortlist">Jump to app shortlist</a>
-          <a class="button button-secondary" href="work-hours.html" data-track-click="calculator_to_commercial" data-track-label="best time tracking apps to work hours calculator">Use the work hours calculator first</a>
+          <a class="button" href="#app-shortlist" data-track-click="best_apps_shortlist_click" data-track-label="best time tracking apps shortlist">Jump to app shortlist</a>
+          <a class="button button-secondary" href="work-hours.html" data-track-click="best_apps_to_work_hours_click" data-track-label="best time tracking apps to work hours calculator">Use the work hours calculator first</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <article class="article-card quick-answer">
+          <span class="eyebrow">Quick Answer</span>
+          <h2>Pick the app based on how you actually record time</h2>
+          <div class="verdict-grid">
+            <div class="verdict-item">
+              <strong>Best free starting point: Clockify</strong>
+              <p>A practical choice if you want manual entry, team visibility, and a generous free plan before paying for extras.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best for solo freelancers: Toggl Track</strong>
+              <p>Usually easier to recommend when clean UX and fast daily logging matter more than heavier admin controls.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best for billing-focused work: Harvest</strong>
+              <p>Strong when tracked time needs to become invoices, budgets, or client-ready reports.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -82,31 +105,46 @@
           <table class="comparison-table">
             <thead>
               <tr>
-                <th>Feature area</th>
-                <th>Why it matters</th>
-                <th>Best when</th>
+                <th>App</th>
+                <th>Best for</th>
+                <th>Free plan</th>
+                <th>Project/client tracking</th>
+                <th>Ease of use</th>
+                <th>Manual-entry friendliness</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Project tracking</td>
-                <td>Lets you separate client, internal, and admin work.</td>
-                <td>You bill by client or project instead of just tracking total hours.</td>
+                <td>Clockify</td>
+                <td>Freelancers and teams that want a flexible all-rounder.</td>
+                <td>Yes</td>
+                <td>Good for projects, clients, and shared workspaces.</td>
+                <td>Fairly simple once the workspace is set up.</td>
+                <td>Good for timers plus later corrections.</td>
               </tr>
               <tr>
-                <td>Timer plus manual entry</td>
-                <td>Gives flexibility when some work is tracked live and some is added later.</td>
-                <td>Your day mixes focused sessions with backfilled admin time.</td>
+                <td>Toggl Track</td>
+                <td>Solo consultants and freelancers who want a lighter daily workflow.</td>
+                <td>Yes</td>
+                <td>Good for client and project separation.</td>
+                <td>Often the cleanest interface for personal use.</td>
+                <td>Works well when you mix timer use with quick backfill.</td>
               </tr>
               <tr>
-                <td>Reports and exports</td>
-                <td>Helpful when hours need to become invoices, payroll notes, or project summaries.</td>
-                <td>You review hours every week instead of only once in a while.</td>
+                <td>Harvest</td>
+                <td>Service businesses that invoice from tracked work.</td>
+                <td>Limited</td>
+                <td>Strong for client, project, and budget context.</td>
+                <td>Simple for small teams, especially around invoicing.</td>
+                <td>Good, but usually chosen for billing workflow more than pure tracking.</td>
               </tr>
               <tr>
-                <td>Team approvals</td>
-                <td>Useful for managers, agencies, and operations workflows.</td>
-                <td>Hours must be checked before payroll or billing goes out.</td>
+                <td>Calculator only</td>
+                <td>Spot checks and one-off totals.</td>
+                <td>Not needed</td>
+                <td>No ongoing history.</td>
+                <td>Fastest for a single answer.</td>
+                <td>Excellent for manual entry because there is no account layer.</td>
               </tr>
             </tbody>
           </table>
@@ -115,21 +153,58 @@
     </section>
 
     <section class="section" id="app-shortlist">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Recommendation Cards</span>
+          <h2>Good starting points by use case</h2>
+        </div>
+        <div class="tool-card-grid">
+          <article class="tool-card">
+            <span class="eyebrow">Free option</span>
+            <h3>Clockify</h3>
+            <p>A flexible first choice if you want to test team or client tracking without paying on day one.</p>
+            <a class="button" href="#choose-clockify" data-track-click="clockify_click" data-track-label="best apps clockify card">Try Clockify</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Solo workflow</span>
+            <h3>Toggl Track</h3>
+            <p>Usually the cleaner fit for freelancers who care more about fast daily use than heavy admin features.</p>
+            <a class="button" href="#choose-toggl" data-track-click="toggl_click" data-track-label="best apps toggl card">Start with Toggl</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Client billing</span>
+            <h3>Harvest</h3>
+            <p>Best when tracked time needs to move quickly into invoices, budgets, or client reporting.</p>
+            <a class="button" href="#choose-harvest" data-track-click="harvest_click" data-track-label="best apps harvest card">Explore Harvest</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="app-shortlist">
       <div class="section-inner best-for-grid">
-        <article class="best-for-card">
+        <article class="best-for-card" id="choose-toggl">
           <h3>Best for freelancers</h3>
-          <ul>
-            <li>Client and project separation.</li>
-            <li>Billable versus non-billable time.</li>
-            <li>Easy exports for invoices or summaries.</li>
+          <ul class="decision-list">
+            <li>Choose Toggl Track if you mostly track your own time and want a cleaner daily experience.</li>
+            <li>Good fit for consultants, designers, and solo service providers who jump between clients.</li>
+            <li>Often the better choice when ease of use matters more than broad admin controls.</li>
           </ul>
         </article>
-        <article class="best-for-card">
+        <article class="best-for-card" id="choose-clockify">
           <h3>Best for small teams</h3>
-          <ul>
-            <li>Shared workspace with manager visibility.</li>
-            <li>Approval steps before payroll review.</li>
-            <li>Consistent records across several people.</li>
+          <ul class="decision-list">
+            <li>Choose Clockify if you want a shared workspace, broader reporting, and a useful free plan.</li>
+            <li>Good fit for agencies and teams that need visibility across several people.</li>
+            <li>Usually the safest place to start when you know manual tracking is ending but the final workflow is still evolving.</li>
+          </ul>
+        </article>
+        <article class="best-for-card" id="choose-harvest">
+          <h3>Who should choose Harvest</h3>
+          <ul class="decision-list">
+            <li>Choose Harvest when time tracking is closely tied to invoices or budget control.</li>
+            <li>Works well for service businesses that need reports clients can actually use.</li>
+            <li>Usually stronger for billing workflow than for heavy team oversight.</li>
           </ul>
         </article>
       </div>
@@ -158,13 +233,23 @@
 
     <section class="section">
       <div class="section-inner">
+        <article class="article-card final-recommendation">
+          <span class="eyebrow">Final Recommendation</span>
+          <h2>Pick the app based on the next repeating problem</h2>
+          <p>Choose Clockify if you want a broad, flexible starting point with team visibility and a free plan. Choose Toggl Track if solo usability and quick daily tracking matter most. Choose Harvest if tracking and invoicing are tightly connected in your workflow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
         <article class="article-card recommendation-block">
           <span class="eyebrow">Related paths</span>
           <h2>Use a calculator now, compare software when the pattern repeats</h2>
           <p>If you are still checking occasional shifts, start with the <a href="hours-between.html">hours between times calculator</a>, <a href="work-hours.html">work hours calculator</a>, or <a href="overtime.html">overtime calculator</a>. If the same work shows up every week, move next to a comparison page and decide what kind of app fits your routine.</p>
           <div class="soft-button-group">
-            <a class="button" href="free-vs-paid-time-tracker.html" data-track-click="commercial_page_link" data-track-label="best time tracking apps to free vs paid">Compare free vs paid trackers</a>
-            <a class="button button-secondary" href="best-timesheet-app-for-freelancers.html" data-track-click="commercial_page_link" data-track-label="best time tracking apps to freelancer apps">See tools for freelancers</a>
+            <a class="button" href="free-vs-paid-time-tracker.html" data-track-click="best_apps_to_free_vs_paid_click" data-track-label="best time tracking apps to free vs paid">Compare free vs paid trackers</a>
+            <a class="button button-secondary" href="best-timesheet-app-for-freelancers.html" data-track-click="best_apps_to_freelancer_apps_click" data-track-label="best time tracking apps to freelancer apps">See tools for freelancers</a>
           </div>
         </article>
       </div>

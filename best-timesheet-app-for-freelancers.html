@@ -53,9 +53,32 @@
         <h1>Best timesheet app features for freelancers</h1>
         <p class="lead">Freelancers usually do not need the same thing as a payroll team. The best app for freelance work is often the one that separates clients cleanly, distinguishes billable from non-billable time, and makes it easier to review work without rebuilding your week by hand.</p>
         <div class="soft-button-group">
-          <a class="button" href="#freelancer-checklist" data-track-click="comparison_button" data-track-label="freelancer app checklist">Open freelancer checklist</a>
-          <a class="button button-secondary" href="timecard.html" data-track-click="calculator_to_commercial" data-track-label="freelancer app to timecard calculator">Use the timecard calculator first</a>
+          <a class="button" href="#freelancer-checklist" data-track-click="freelancer_apps_checklist_click" data-track-label="freelancer app checklist">Open freelancer checklist</a>
+          <a class="button button-secondary" href="timecard.html" data-track-click="freelancer_apps_to_timecard_click" data-track-label="freelancer app to timecard calculator">Use the timecard calculator first</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <article class="article-card quick-answer">
+          <span class="eyebrow">Quick Answer</span>
+          <h2>Freelancers usually need cleaner client tracking, not heavier payroll software.</h2>
+          <div class="verdict-grid">
+            <div class="verdict-item">
+              <strong>Best overall for solo freelancers: Toggl Track</strong>
+              <p>A strong starting point when clean daily use and client separation matter most.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best for free tracking: Clockify</strong>
+              <p>Useful if you want project tracking and room to grow before paying for a more polished workflow.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best for invoicing-heavy work: Harvest</strong>
+              <p>Usually easier to justify when tracked hours quickly become invoices or client-ready reports.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -78,31 +101,46 @@
           <table class="comparison-table">
             <thead>
               <tr>
-                <th>Freelancer need</th>
-                <th>Why it matters</th>
-                <th>What to look for</th>
+                <th>Option</th>
+                <th>Best for</th>
+                <th>Billable tracking</th>
+                <th>Client/project clarity</th>
+                <th>Ease of use</th>
+                <th>Manual-entry friendliness</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Client separation</td>
-                <td>Keeps reporting clean when several clients run at once.</td>
-                <td>Projects or workspaces by client.</td>
+                <td>Toggl Track</td>
+                <td>Solo freelancers who want clean daily tracking.</td>
+                <td>Good</td>
+                <td>Strong for personal client/project separation.</td>
+                <td>Usually the smoothest for everyday solo use.</td>
+                <td>Good for quick edits and backfilled admin time.</td>
               </tr>
               <tr>
-                <td>Billable vs admin</td>
-                <td>Helps you see what actually earns money.</td>
-                <td>Simple tagging or billable status per entry.</td>
+                <td>Clockify</td>
+                <td>Freelancers who want a broad free option.</td>
+                <td>Good</td>
+                <td>Good, especially if you may collaborate later.</td>
+                <td>Solid, though a little more workspace-oriented.</td>
+                <td>Very good if you mix timers with manual adjustments.</td>
               </tr>
               <tr>
-                <td>Export quality</td>
-                <td>Makes it easier to send summaries or build invoices.</td>
-                <td>Readable reports and client-ready exports.</td>
+                <td>Harvest</td>
+                <td>Freelancers who invoice from tracked time.</td>
+                <td>Strong</td>
+                <td>Strong with budgets, clients, and billing context.</td>
+                <td>Simple for service workflows.</td>
+                <td>Good, especially when entries feed billing.</td>
               </tr>
               <tr>
-                <td>Low friction daily use</td>
-                <td>An app only helps if it is easy to open every day.</td>
-                <td>Fast timer plus simple manual edits.</td>
+                <td>Calculator only</td>
+                <td>Freelancers who still just need occasional totals.</td>
+                <td>No stored workflow</td>
+                <td>No ongoing project history.</td>
+                <td>Fastest for one-off checks.</td>
+                <td>Excellent if you only total hours occasionally.</td>
               </tr>
             </tbody>
           </table>
@@ -111,21 +149,58 @@
     </section>
 
     <section class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Recommendation Cards</span>
+          <h2>Three strong starting points for freelance work</h2>
+        </div>
+        <div class="tool-card-grid">
+          <article class="tool-card">
+            <span class="eyebrow">Solo tracking</span>
+            <h3>Toggl Track</h3>
+            <p>A strong fit if you want a lighter daily workflow with clean client and project separation.</p>
+            <a class="button" href="#choose-toggl" data-track-click="toggl_click" data-track-label="freelancer apps toggl card">Start with Toggl</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Free option</span>
+            <h3>Clockify</h3>
+            <p>Useful if you want broad features and flexibility before deciding whether a paid plan is justified.</p>
+            <a class="button" href="#choose-clockify" data-track-click="clockify_click" data-track-label="freelancer apps clockify card">Try Clockify</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Billing workflow</span>
+            <h3>Harvest</h3>
+            <p>Best if tracked hours are tightly connected to invoices, budgets, or client-ready reporting.</p>
+            <a class="button" href="#choose-harvest" data-track-click="harvest_click" data-track-label="freelancer apps harvest card">Explore Harvest</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="section-inner best-for-grid">
-        <article class="best-for-card">
+        <article class="best-for-card" id="choose-toggl">
           <h3>Best for solo client work</h3>
-          <ul>
-            <li>Fast timer and simple daily logging.</li>
-            <li>Clear billable versus non-billable split.</li>
-            <li>Good fit if you still rely on the <a href="timesheet.html">timesheet calculator</a> for quick checks.</li>
+          <ul class="decision-list">
+            <li>Choose Toggl Track if you mostly track your own work and want low-friction daily logging.</li>
+            <li>Good fit when client work matters more than team approval layers.</li>
+            <li>Still pair it with the <a href="timesheet.html">timesheet calculator</a> for quick spot checks.</li>
           </ul>
         </article>
-        <article class="best-for-card">
+        <article class="best-for-card" id="choose-clockify">
           <h3>Best for growing freelance businesses</h3>
-          <ul>
-            <li>Project records that can scale beyond one or two clients.</li>
-            <li>Better reporting for admin, retainers, or team support.</li>
-            <li>Useful once manual weekly summaries stop being enough.</li>
+          <ul class="decision-list">
+            <li>Choose Clockify if you want a broader free setup that can grow beyond one or two clients.</li>
+            <li>Useful when contractors or collaborators may join later.</li>
+            <li>Often the safest pick if you want flexibility before committing to a paid workflow.</li>
+          </ul>
+        </article>
+        <article class="best-for-card" id="choose-harvest">
+          <h3>Who should choose Harvest</h3>
+          <ul class="decision-list">
+            <li>Choose Harvest if time tracking and invoicing are tightly connected in your business.</li>
+            <li>Good fit for freelancers who want budgets, billing context, and clearer client-facing reports.</li>
+            <li>Usually easier to justify once billable work is steady and admin time needs to be measured too.</li>
           </ul>
         </article>
       </div>
@@ -154,13 +229,23 @@
 
     <section class="section">
       <div class="section-inner">
+        <article class="article-card final-recommendation">
+          <span class="eyebrow">Final Recommendation</span>
+          <h2>Toggl for solo simplicity, Clockify for flexibility, Harvest for billing</h2>
+          <p>Choose Toggl Track if you want the cleanest solo workflow for client work. Choose Clockify if you want a broader free setup with room to grow. Choose Harvest if your tracked hours regularly become invoices or client reports and that billing step matters as much as the timer itself.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
         <article class="article-card recommendation-block">
           <span class="eyebrow">Practical next step</span>
           <h2>Pick the app that matches client work, not just total hours</h2>
           <p>If you mostly need client, project, and admin separation, compare freelancer-focused tools first. If you are still deciding whether software is even necessary, use the <a href="timecard.html">timecard calculator</a> or <a href="best-time-tracking-apps.html">broader app comparison</a> before narrowing to a single option.</p>
           <div class="soft-button-group">
-            <a class="button" href="best-time-tracking-apps.html" data-track-click="commercial_page_link" data-track-label="freelancer app to best apps">Compare time tracking apps</a>
-            <a class="button button-secondary" href="clockify-vs-toggl.html" data-track-click="commercial_page_link" data-track-label="freelancer app to clockify vs toggl">Read Clockify vs Toggl</a>
+            <a class="button" href="best-time-tracking-apps.html" data-track-click="freelancer_apps_to_best_apps_click" data-track-label="freelancer app to best apps">Compare time tracking apps</a>
+            <a class="button button-secondary" href="clockify-vs-toggl.html" data-track-click="freelancer_apps_to_clockify_toggl_click" data-track-label="freelancer app to clockify vs toggl">Read Clockify vs Toggl</a>
           </div>
         </article>
       </div>

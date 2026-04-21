@@ -402,6 +402,66 @@ button:focus-visible {
   max-width: 64ch;
 }
 
+.quick-answer {
+  background:
+    linear-gradient(180deg, rgba(15, 118, 110, 0.08), rgba(255, 255, 255, 0.96));
+  border-color: rgba(15, 118, 110, 0.18);
+}
+
+.verdict-grid,
+.tool-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.verdict-item,
+.tool-card,
+.final-recommendation {
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.verdict-item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.verdict-item p,
+.tool-card p,
+.final-recommendation p {
+  margin-bottom: 0;
+}
+
+.tool-card {
+  display: grid;
+  gap: 14px;
+}
+
+.tool-card .button {
+  justify-self: start;
+}
+
+.final-recommendation {
+  background:
+    linear-gradient(180deg, rgba(245, 158, 11, 0.08), rgba(255, 255, 255, 0.96));
+  border-color: rgba(245, 158, 11, 0.18);
+}
+
+.decision-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.decision-list li {
+  margin-bottom: 8px;
+}
+
 .recommendation-block {
   display: grid;
   gap: 16px;
@@ -743,6 +803,8 @@ tbody tr:last-child td {
   .summary-grid,
   .field-grid.two,
   .field-grid.three,
+  .verdict-grid,
+  .tool-card-grid,
   .pros-cons-grid,
   .best-for-grid {
     grid-template-columns: 1fr;

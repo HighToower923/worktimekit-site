@@ -53,9 +53,32 @@
         <h1>Free vs paid time tracker: what actually changes?</h1>
         <p class="lead">The real question is not whether paid is always better. It is whether your workload has reached the point where reports, approvals, client records, or repeated admin work now cost more time than the upgrade itself.</p>
         <div class="soft-button-group">
-          <a class="button" href="#free-vs-paid-table" data-track-click="comparison_button" data-track-label="free vs paid table">Open the comparison</a>
-          <a class="button button-secondary" href="overtime.html" data-track-click="calculator_to_commercial" data-track-label="free vs paid to overtime calculator">Use the overtime calculator first</a>
+          <a class="button" href="#free-vs-paid-table" data-track-click="free_vs_paid_table_click" data-track-label="free vs paid table">Open the comparison</a>
+          <a class="button button-secondary" href="overtime.html" data-track-click="free_vs_paid_to_overtime_click" data-track-label="free vs paid to overtime calculator">Use the overtime calculator first</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <article class="article-card quick-answer">
+          <span class="eyebrow">Quick Answer</span>
+          <h2>Stay free while you are proving the workflow. Pay once repeated admin becomes the cost.</h2>
+          <div class="verdict-grid">
+            <div class="verdict-item">
+              <strong>Best free starting point: Clockify</strong>
+              <p>A practical free option if you need client or team tracking without paying before the workflow is stable.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best paid upgrade path: Toggl Track or Harvest</strong>
+              <p>Toggl works well for solo ease of use, while Harvest is easier to justify when billing and reporting matter.</p>
+            </div>
+            <div class="verdict-item">
+              <strong>Best for one-off checks: stay with a calculator</strong>
+              <p>If you only need occasional totals, the free option may already be no software yet.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -67,7 +90,7 @@
         </article>
         <article class="article-card">
           <h2>When paid plans begin to matter</h2>
-          <p>Paid plans become easier to justify when client billing, recurring exports, approvals, reminders, or team workflows are part of the job. At that point, the upgrade is less about “more features” and more about reducing routine admin.</p>
+          <p>Paid plans become easier to justify when client billing, recurring exports, approvals, reminders, or team workflows are part of the job. At that point, the upgrade is less about more features and more about reducing routine admin.</p>
         </article>
       </div>
     </section>
@@ -88,6 +111,11 @@
                 <td>Who is tracking?</td>
                 <td>One person or a very small workflow.</td>
                 <td>Several people need the same system.</td>
+              </tr>
+              <tr>
+                <td>Best example</td>
+                <td>Clockify if you want a broad free starting point.</td>
+                <td>Toggl Track for cleaner solo UX or Harvest for billing-heavy work.</td>
               </tr>
               <tr>
                 <td>How often are reports needed?</td>
@@ -111,21 +139,50 @@
     </section>
 
     <section class="section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Recommendation Cards</span>
+          <h2>Three realistic paths</h2>
+        </div>
+        <div class="tool-card-grid">
+          <article class="tool-card">
+            <span class="eyebrow">Stay lean</span>
+            <h3>Keep using free tracking</h3>
+            <p>Best if you are solo, reporting is light, and a calculator still covers most corrections or spot checks.</p>
+            <a class="button" href="#choose-free" data-track-click="free_tracker_click" data-track-label="free vs paid choose free">Compare free plans</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Upgrade for workflow</span>
+            <h3>Move to a paid tracker</h3>
+            <p>Best when clients, exports, approvals, or repeated admin are starting to cost more time than the upgrade.</p>
+            <a class="button" href="#choose-paid" data-track-click="paid_tracker_click" data-track-label="free vs paid choose paid">Explore paid options</a>
+          </article>
+          <article class="tool-card">
+            <span class="eyebrow">Manual fallback</span>
+            <h3>Use calculators for now</h3>
+            <p>Best if your tracking problem is still occasional and you do not need stored records week after week.</p>
+            <a class="button" href="weekly.html" data-track-click="free_vs_paid_to_weekly_click" data-track-label="free vs paid to weekly calculator">Use a calculator first</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="section-inner pros-cons-grid">
-        <article class="pros-card">
-          <h3>Why stay free longer</h3>
-          <ul>
-            <li>Lower commitment while you are testing a workflow.</li>
-            <li>Good enough for simple solo tracking.</li>
-            <li>Keeps overhead small if you only need light records.</li>
+        <article class="pros-card" id="choose-free">
+          <h3>Who should choose a free tracker</h3>
+          <ul class="decision-list">
+            <li>Solo workers with a short client list and light reporting needs.</li>
+            <li>Anyone still checking totals with a calculator and only needing software as a basic daily log.</li>
+            <li>Teams that are still testing whether shared tracking is even part of the long-term workflow.</li>
           </ul>
         </article>
-        <article class="cons-card">
-          <h3>Why paid plans often win later</h3>
-          <ul>
-            <li>Approvals and reporting stop being manual chores.</li>
-            <li>Client work becomes easier to organize.</li>
-            <li>Historical data is easier to revisit and export.</li>
+        <article class="cons-card" id="choose-paid">
+          <h3>Who should choose a paid tracker</h3>
+          <ul class="decision-list">
+            <li>Freelancers with multiple active clients and regular invoice prep.</li>
+            <li>Teams that already send weekly hours for review or payroll.</li>
+            <li>Anyone whose manual fixes now happen often enough to feel like a second job.</li>
           </ul>
         </article>
       </div>
@@ -152,13 +209,23 @@
 
     <section class="section">
       <div class="section-inner">
+        <article class="article-card final-recommendation">
+          <span class="eyebrow">Final Recommendation</span>
+          <h2>Free first, paid second, calculators when the need is still occasional</h2>
+          <p>Stay free if you are still proving the workflow and your reporting needs are light. Upgrade when client work, exports, approvals, or team coordination keep creating repeat admin. If you mainly need spot checks, a calculator is still the cleaner tool than starting software too early.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
         <article class="article-card recommendation-block">
           <span class="eyebrow">Neutral recommendation</span>
           <h2>Upgrade when repeated admin becomes the real problem</h2>
           <p>If your current issue is just getting one correct total, stay with a calculator. If your issue is repeated entry, project history, or team review, comparison pages and software options become more useful than another manual shortcut.</p>
           <div class="soft-button-group">
-            <a class="button" href="best-time-tracking-apps.html" data-track-click="commercial_page_link" data-track-label="free vs paid to best apps">Compare time tracking apps</a>
-            <a class="button button-secondary" href="best-timesheet-software.html" data-track-click="commercial_page_link" data-track-label="free vs paid to best timesheet software">Compare timesheet software</a>
+            <a class="button" href="best-time-tracking-apps.html" data-track-click="free_vs_paid_to_best_apps_click" data-track-label="free vs paid to best apps">Compare time tracking apps</a>
+            <a class="button button-secondary" href="best-timesheet-software.html" data-track-click="free_vs_paid_to_best_timesheet_software_click" data-track-label="free vs paid to best timesheet software">Compare timesheet software</a>
           </div>
         </article>
       </div>

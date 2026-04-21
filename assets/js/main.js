@@ -58,11 +58,13 @@ function initTrackedClicks() {
 
     const action = target.dataset.trackClick || "worktimekit_click";
     const label = target.dataset.trackLabel || target.textContent.trim() || "click";
+    const href = target.getAttribute("href") || target.dataset.trackHref || "";
+    const normalizedHref = href.startsWith("#") ? `${window.location.pathname}${href}` : href;
 
     window.gtag("event", action, {
       event_category: "engagement",
       event_label: label,
-      link_url: target.getAttribute("href") || target.dataset.trackHref || "",
+      link_url: normalizedHref,
       page_path: window.location.pathname
     });
   });
