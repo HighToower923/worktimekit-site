@@ -1,8 +1,13 @@
 const MINUTES_PER_DAY = 24 * 60;
+const AFFILIATE_LINKS = {
+  fiverr: "https://twnfz.com/g/oqcmadzidp7f89abee89acbbb3152e/",
+  square: "https://example.com/square-affiliate-link"
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   markCurrentPage();
   setYear();
+  hydrateAffiliateLinks();
   bindContactForm();
   initTimesheetCalculator();
   initWeeklyCalculator();
@@ -24,6 +29,21 @@ function markCurrentPage() {
 function setYear() {
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = new Date().getFullYear();
+  });
+}
+
+function hydrateAffiliateLinks() {
+  document.querySelectorAll("[data-affiliate-key]").forEach((link) => {
+    const key = link.dataset.affiliateKey;
+    const href = AFFILIATE_LINKS[key];
+
+    if (!href) {
+      return;
+    }
+
+    link.setAttribute("href", href);
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "sponsored nofollow noopener");
   });
 }
 
